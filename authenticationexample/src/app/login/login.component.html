@@ -1,0 +1,13 @@
+<div class="container">
+    
+    <form>
+    <div>
+      User Name : <input type="text" name="username" [(ngModel)]="currentUser.username">
+      Password : <input type="password" name="password" [(ngModel)]="currentUser.password" autocomplete="on">
+    </div>
+    <button (click)=checkLogin() class="btn btn-success">
+      Login
+    </button>
+    </form>
+    <div *ngIf="!isValid"><p>Incorrect Credentials</p></div>
+  </div>

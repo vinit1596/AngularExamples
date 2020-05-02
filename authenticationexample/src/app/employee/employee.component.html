@@ -1,0 +1,10 @@
+<div class="container">
+<div>
+<p *ngIf="displayMessage">{{ message }}</p>
+<button (click)=getValue() class="btn btn-success">{{!displayMessage ? 'Show' : 'Hide' }} Value using token</button>
+</div>
+<hr>
+<div>
+<app-product></app-product>
+</div>
+</div>
